@@ -1,6 +1,9 @@
 /* Kod vysilace pro LasKKit Simple Joystick - Arduino NANO
-4kanaly ,datove piny A0, A1, A2, A3
-*/
+ * 4kanaly ,datove piny A0, A1, A2, A3
+ *
+ * Pouzita knihovna https://github.com/nRF24/RF24
+ * 
+ */
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
