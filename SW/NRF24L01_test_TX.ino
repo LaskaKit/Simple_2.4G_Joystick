@@ -33,6 +33,7 @@ void setup()
   //Nastaveni NRF24
   radio.begin();
   radio.setAutoAck(false);
+  radio.setPALevel(RF24_PA_LOW);  //zníženie výkonu kvoli rušeniu
   radio.setDataRate(RF24_250KBPS);
   radio.openWritingPipe(my_radio_pipe);
   
